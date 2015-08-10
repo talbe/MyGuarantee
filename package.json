@@ -1,6 +1,6 @@
 {
   "name": "module-name",
-  "version": "10.3.1",
+  "version": "10.3.2",
   "description": "An example module to illustrate the usage of a package.json",
   "author": "Your Name <you.name@example.org>",
   "contributors": [{
@@ -12,12 +12,12 @@
 },
   "scripts": {
     "test": "vows --spec --isolate",
-    "start": "node index.js",
+    "start": "node app.js",
     "predeploy": "echo im about to deploy",
     "postdeploy": "echo ive deployed",
     "prepublish": "coffee --bare --compile --output lib/foo src/foo/*.coffee"
   },
-  "main": "lib/foo.js",
+  "main": "app.js",
   "repository": {
   "type": "git",
   "url": "https://github.com/nodejitsu/browsenpm.org"
